@@ -1,0 +1,243 @@
+.club{
+    background-color: #160e2a;
+    height: auto;
+}
+.twopart{
+    display: flex;
+    height:50vh;
+    width:100vw;
+}
+.leftside{
+    width:50%;
+}
+.leftside h1{
+    margin-left: 150px;
+    font-size: 40px;
+    color:#4c75cc;
+    padding-top: 90px;
+    background-color: #160e2a;
+}
+.leftside >h3{
+    margin-left: 150px;
+}
+.work{
+    color:#A69CD0;
+    line-height: 30px;
+}
+.workshop{
+    font-size:40px;
+    color:#8c549e;
+}
+   
+.rightside{ 
+    height: 100%;
+    width: 50%;
+    padding-top: 50px;
+} 
+.rightside> img{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.msg{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #160e2a;
+    margin-bottom: 50px;
+}
+.msg1,.msg2{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* about workshop */
+.aboutWorkshop{
+    background-color: #231545;
+}
+.aboutWorkshop{
+    height: auto;
+    padding-bottom: 40px;
+}
+.aboutWorkshop>h1{
+    padding-top: 30px;
+    padding-left: 50px;
+}
+ .about{
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   margin:10px 60px ;
+ }
+ .left{
+  width: 50%;
+ }
+ .left p{
+    width:70%;
+    line-height: 23px;
+    text-align: justify;
+    /* padding-left: 60px; */
+    margin: auto;
+ }
+ .right{
+    width:50%;
+    display: flex;
+    justify-content: center;
+ }
+ .right>img{
+    width:70%;
+}
+
+/* schedule table */
+.schedule{
+    height: auto;
+    padding-bottom: 10px;
+}
+.head h1{
+    margin-top: 30px;
+    text-align: center;
+}
+.scheduleTable{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    border: 1px solid  rgba(245, 222, 179, 0.507);
+    width: 65%;
+    margin: 50px auto;
+}
+.tableBox{
+    border: 1px solid rgba(245, 222, 179, 0.507);
+    padding: 15px 8px;
+    border-collapse: collapse;
+    text-align: center;
+}
+.tableBox:nth-child(1),
+.tableBox:nth-child(2),
+.tableBox:nth-child(3){
+    background: #7d65ff92;
+    font-weight: 600;
+}
+
+.bannerRegister{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+    width: 300px;
+}
+.bannerRegister>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 90px;
+    animation: glowing 1300ms infinite;
+}
+.bannerRegister>a>button{
+    color: #0B0715;
+    padding: 12px 27px;
+    border: 2px solid white;
+    border-radius: 90px;
+    font-weight: 700;
+    background-color: #A69CD0;
+    border: #A69CD0;
+    animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+    0% {
+      background-color: #A69CD0;
+      box-shadow: 0 0 5px #A69CD0;
+    }
+    50% {
+      background-color: #A69CD0;
+      box-shadow: 0 0 20px #A69CD0;
+    }
+    100% {
+      background-color: #A69CD0;
+      box-shadow: 0 0 5px #A69CD0;
+    }
+}
+@media screen and (max-width:800px){
+    .club{
+        height: auto;
+    }
+    .twopart{
+        flex-direction: column-reverse;
+    }
+    .msg{
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 10px;
+        padding-top: 15px;
+    }
+    .leftside{
+        width:100%;
+    }
+    .twopart{
+        display: flex;
+        height:auto;
+        width:100vw;
+    }
+    .rightside{ 
+        height: 370px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    } 
+    .leftside{
+        width:100%;
+    }
+    .leftside h1{
+        margin-left:30px;
+        font-size: 40px;
+        padding-top: 0px;
+    }
+    .leftside >h3{
+        margin-left: 30px;
+    }
+
+
+
+
+    .aboutWorkshop>h1{
+        font-size: 29px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .about{
+        flex-direction: column;
+        margin:0px 0px ;
+    }
+    .left{
+        width: 98%;
+    }
+    .left p{
+        width: 90%;
+    }
+    .right{
+        width:90%;
+        padding-top: 30px;
+     }
+     .right>img{
+        width:90%;
+    }
+
+
+    .scheduleTable{
+        width: 90%;
+    }
+    .head h1{
+        font-size: 29px;
+    }
+
+
+
+
+}
