@@ -1,10 +1,10 @@
 .club{
     background-color: #160e2a;
-    height: auto;
+    height: 84vh;
 }
 .twopart{
     display: flex;
-    height:50vh;
+    height:70vh;
     width:100vw;
 }
 .leftside{
@@ -12,9 +12,9 @@
 }
 .leftside h1{
     margin-left: 150px;
-    font-size: 40px;
+    font-size: 65px;
     color:#4c75cc;
-    padding-top: 90px;
+    padding-top: 110px;
     background-color: #160e2a;
 }
 .leftside >h3{
@@ -23,9 +23,11 @@
 .work{
     color:#A69CD0;
     line-height: 30px;
+    font-size: 25px;
+    line-height: 35px;
 }
 .workshop{
-    font-size:40px;
+    font-size:50px;
     color:#8c549e;
 }
    
@@ -38,7 +40,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 58%;
 }
 .msg{
     display: flex;
@@ -49,6 +51,7 @@
 .msg1,.msg2{
     display: flex;
     gap: 10px;
+    font-size: 25px;
 }
 
 
@@ -160,7 +163,7 @@
       box-shadow: 0 0 5px #A69CD0;
     }
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:1000px){
     .club{
         height: auto;
     }
@@ -175,6 +178,9 @@
     }
     .leftside{
         width:100%;
+    }
+    .rightside> img{
+        width: 300px;
     }
     .twopart{
         display: flex;
@@ -193,12 +199,35 @@
         width:100%;
     }
     .leftside h1{
-        margin-left:30px;
+        margin-left:0px;
         font-size: 40px;
+        text-align: center;
+        text-align: center;
         padding-top: 0px;
     }
     .leftside >h3{
-        margin-left: 30px;
+        margin-left: 0px;
+    }
+    .work{
+        font-size: 20px;
+        text-align: center;
+    }
+    .workshop{
+        font-size:33px;
+        text-align: center;
+    }
+    .msg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #160e2a;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .msg1,.msg2{
+        gap: 10px;
+        font-size: 15px;
     }
 
 
