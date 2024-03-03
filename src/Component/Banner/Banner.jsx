@@ -4,6 +4,7 @@ import './Banner.css'
 const Banner = () => {
   return (
   <>
+
   <div style={{backgroundColor:"#160e2a"}}>
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
        
@@ -43,14 +44,14 @@ const Banner = () => {
                foundation in web development. The workshop will cover essential 
                technologies including HTML, CSS, JavaScript, and React, catering to
                 both beginners and those looking to deepen their understanding. </p>
-            <br />
+          
             <p>The workshop goes beyond individual skill development, fostering a 
               sense of community through open discussions, Q&A sessions, and networking 
               opportunities.  </p>
           </div>
-          <div className="right">
+         
             <img src="./Photo/reactjscss.png" alt="" srcset="" />
-          </div>
+        
         </div>
       </div>
     {/* shedule */}
@@ -70,7 +71,7 @@ const Banner = () => {
         <div className="tableBox">3-5pm</div>
       </div>
       <div className='bannerRegister'>
-        <a href="/"><button>REGISTER NOW</button></a>
+        <a href="/" className='register'><button className='registerButton'>REGISTER NOW</button></a>
         </div>
     </div>
 
